@@ -1,6 +1,9 @@
 # OcBank PT/BR 🏦
-O OcBank é um projeto de sistema bancário digital criado para aplicar arquitetura limpa e boas práticas de desenvolvimento back-end. O foco está na modelagem do domínio, organização em camadas e construção de uma base sólida e escalável, simulando operações bancárias de forma clara, estruturada e evolutiva.
-
+O OcBank é um banco digital projetado para simular operações financeiras reais de forma estruturada e escalável.
+O sistema foi desenvolvido aplicando conceitos de arquitetura limpa, separação de responsabilidades e modelagem de domínio, garantindo organização, clareza nas regras de negócio e facilidade de evolução.
+A proposta é construir uma base sólida para um banco moderno, com foco em segurança, consistência e escalabilidade.
 
 # OcBank EN/US 🏦
-OcBank is a digital banking system project created to apply clean architecture principles and back-end development best practices. The focus is on domain modeling, layered organization, and building a solid and scalable foundation, simulating banking operations in a clear, structured, and evolvable way.
+OcBank is a digital banking platform designed to simulate real financial operations in a structured and scalable way.
+The system was built applying clean architecture principles, separation of concerns, and domain modeling, ensuring clear business rules and maintainable growth.
+The goal is to create a solid foundation for a modern banking system focused on consistency, security, and scalability.
