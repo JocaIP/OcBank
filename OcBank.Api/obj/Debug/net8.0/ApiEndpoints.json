@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "OcBank.Api.Controllers.UsuariosController",
+    "Method": "Criar",
+    "RelativePath": "usuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "OcBank.Application.UseCases.CriarUsuario.CriarUsuarioInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OcBank.Api.Controllers.UsuariosController",
+    "Method": "ObterTodos",
+    "RelativePath": "usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

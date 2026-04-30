@@ -1,0 +1,11 @@
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\bin\Debug\net8.0\OcBank.Infrastructure.deps.json
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\bin\Debug\net8.0\OcBank.Infrastructure.dll
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\bin\Debug\net8.0\OcBank.Infrastructure.pdb
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\OcBank.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\OcBank.Infrastructure.AssemblyInfoInputs.cache
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\OcBank.Infrastructure.AssemblyInfo.cs
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\OcBank.Infrastructure.csproj.CoreCompileInputs.cache
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\OcBank.Infrastructure.dll
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\refint\OcBank.Infrastructure.dll
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\OcBank.Infrastructure.pdb
+C:\OcBank\OcBank.Api\OcBank.Infrastructure\obj\Debug\net8.0\ref\OcBank.Infrastructure.dll

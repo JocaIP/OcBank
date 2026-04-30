@@ -1,0 +1,15 @@
+C:\OcBank\OcBank.Api\OcBank.Application\bin\Debug\net8.0\OcBank.Application.deps.json
+C:\OcBank\OcBank.Api\OcBank.Application\bin\Debug\net8.0\OcBank.Application.dll
+C:\OcBank\OcBank.Api\OcBank.Application\bin\Debug\net8.0\OcBank.Application.pdb
+C:\OcBank\OcBank.Api\OcBank.Application\bin\Debug\net8.0\OcBank.Domain.dll
+C:\OcBank\OcBank.Api\OcBank.Application\bin\Debug\net8.0\OcBank.Domain.pdb
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.csproj.AssemblyReference.cache
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.AssemblyInfoInputs.cache
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.AssemblyInfo.cs
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.csproj.CoreCompileInputs.cache
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.A.123946D8.Up2Date
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.dll
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\refint\OcBank.Application.dll
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\OcBank.Application.pdb
+C:\OcBank\OcBank.Api\OcBank.Application\obj\Debug\net8.0\ref\OcBank.Application.dll

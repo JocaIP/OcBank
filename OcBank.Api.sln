@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcBank.Api", "OcBank.Api\OcBank.Api.csproj", "{2902A7EE-1F90-42ED-86D7-A8AB58733EB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB} = {50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB}
+		{8BF022DE-8421-417E-BE33-70BCD3C06B12} = {8BF022DE-8421-417E-BE33-70BCD3C06B12}
+		{F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374} = {F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcBank.Application", "OcBank.Application\OcBank.Application.csproj", "{50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcBank.Domain", "OcBank.Domain\OcBank.Domain.csproj", "{F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcBank.Infrastructure", "OcBank.Infrastructure\OcBank.Infrastructure.csproj", "{8BF022DE-8421-417E-BE33-70BCD3C06B12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2902A7EE-1F90-42ED-86D7-A8AB58733EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2902A7EE-1F90-42ED-86D7-A8AB58733EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2902A7EE-1F90-42ED-86D7-A8AB58733EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2902A7EE-1F90-42ED-86D7-A8AB58733EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B371E0-8B63-40F8-9FBE-4F66B9D4ECEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9AFAEB9-FA3C-485D-B2E5-8C9650C0A374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF022DE-8421-417E-BE33-70BCD3C06B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF022DE-8421-417E-BE33-70BCD3C06B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF022DE-8421-417E-BE33-70BCD3C06B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF022DE-8421-417E-BE33-70BCD3C06B12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3ABBAD0-1EBC-4C0D-B162-EEEAAC77E1E0}
+	EndGlobalSection
+EndGlobal

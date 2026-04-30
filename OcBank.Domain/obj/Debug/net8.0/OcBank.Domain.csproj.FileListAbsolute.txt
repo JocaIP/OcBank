@@ -1,0 +1,11 @@
+C:\OcBank\OcBank.Api\OcBank.Domain\bin\Debug\net8.0\OcBank.Domain.deps.json
+C:\OcBank\OcBank.Api\OcBank.Domain\bin\Debug\net8.0\OcBank.Domain.dll
+C:\OcBank\OcBank.Api\OcBank.Domain\bin\Debug\net8.0\OcBank.Domain.pdb
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\OcBank.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\OcBank.Domain.AssemblyInfoInputs.cache
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\OcBank.Domain.AssemblyInfo.cs
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\OcBank.Domain.csproj.CoreCompileInputs.cache
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\OcBank.Domain.dll
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\refint\OcBank.Domain.dll
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\OcBank.Domain.pdb
+C:\OcBank\OcBank.Api\OcBank.Domain\obj\Debug\net8.0\ref\OcBank.Domain.dll
