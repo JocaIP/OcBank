@@ -1,17 +1,27 @@
-﻿using OcBank.Application.Repositorios;
+﻿using Microsoft.EntityFrameworkCore;
+using OcBank.Application.Repositories;
 using OcBank.Application.UseCases.CriarUsuario;
+using OcBank.Application.UseCases.ObterUsuarios;
+using OcBank.Infrastructure.Data;
+using OcBank.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// Swagger (documentação)
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Injeção de dependência
-builder.Services.AddSingleton<UsuarioRepositorio>();
+// 🔥 Injeção correta
 builder.Services.AddScoped<CriarUsuarioUseCase>();
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+builder.Services.AddScoped<ObterUsuariosUseCase>();
+builder.Services.AddScoped<IContaRepositorio, ContaRepositorio>();
+
+// 🔥 Banco
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
@@ -22,9 +32,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

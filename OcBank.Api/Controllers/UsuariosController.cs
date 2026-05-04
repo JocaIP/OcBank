@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OcBank.Application.Repositorios;
 using OcBank.Application.UseCases.CriarUsuario;
+using OcBank.Application.UseCases.ObterUsuarios;
 
 namespace OcBank.Api.Controllers;
 
@@ -16,11 +16,11 @@ public class UsuariosController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Criar([FromBody] CriarUsuarioInput input)
+    public async Task<IActionResult> Criar(CriarUsuarioInput input)
     {
         try
         {
-            var resultado = _useCase.Executar(input);
+            var resultado = await _useCase.Executar(input);
             return Ok(resultado);
         }
         catch (Exception ex)
@@ -28,11 +28,10 @@ public class UsuariosController : ControllerBase
             return BadRequest(new { erro = ex.Message });
         }
     }
-
     [HttpGet]
-    public IActionResult ObterTodos([FromServices] UsuarioRepositorio repositorio)
+    public async Task<IActionResult> ObterTodos([FromServices] ObterUsuariosUseCase useCase)
     {
-        var usuarios = repositorio.ObterTodos();
+        var usuarios = await useCase.Executar();
 
         var resultado = usuarios.Select(u => new
         {
