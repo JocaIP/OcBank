@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OcBank.Application.UseCases.CriarUsuario;
+using OcBank.Application.UseCases.Extrato;
 using OcBank.Application.UseCases.ObterUsuarios;
+using OcBank.Application.UseCases.Sacar;
+using OcBank.Application.UseCases.Saldo;
+using OcBank.Application.UseCases.Transferir;
 
 namespace OcBank.Api.Controllers;
 
@@ -28,6 +32,7 @@ public class UsuariosController : ControllerBase
             return BadRequest(new { erro = ex.Message });
         }
     }
+
     [HttpGet]
     public async Task<IActionResult> ObterTodos([FromServices] ObterUsuariosUseCase useCase)
     {
@@ -41,5 +46,61 @@ public class UsuariosController : ControllerBase
         });
 
         return Ok(resultado);
+    }
+
+    [HttpGet("Saldo/{contaId}")]
+    public async Task<IActionResult> ObterSaldo(
+       [FromServices] ObterSaldoUseCase useCase, Guid contaId)
+    {
+        try
+        {
+            var saldo = await useCase.Executar(contaId);
+            return Ok(new { saldo });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { erro = ex.Message });
+
+        }
+    }
+
+    [HttpPost("saque")]
+    public async Task<IActionResult> Sacar(
+        [FromServices] SacarUseCase useCase, [FromBody] SacarInput input)
+    {
+        try
+        {
+            await useCase.Executar(input);
+            return Ok("Saque realizado com sucesso");
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { erro = ex.Message });
+        }
+    }
+
+    [HttpPost("transferencia")]
+    public async Task<IActionResult> Transferir(
+    [FromServices] TransferirUseCase useCase,
+    [FromBody] TransferirInput input)
+    {
+        try
+        {
+            await useCase.Executar(input);
+            return Ok("Transferência realizada com sucesso");
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { erro = ex.Message });
+        }
+    }
+
+    [HttpGet("extrato/{contaId}")]
+    public async Task<IActionResult> Extrato(
+    [FromServices] ObterExtratoUseCase useCase,
+    Guid contaId)
+    {
+        var extrato = await useCase.Executar(contaId);
+        return Ok(extrato);
     }
 }

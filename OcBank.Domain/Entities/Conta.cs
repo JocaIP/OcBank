@@ -14,4 +14,23 @@ public class Conta
         Saldo = 0;
         CriadoEm = DateTime.UtcNow;
     }
+    public void Depositar(decimal valor)
+    {
+        if (valor <= 0)
+            throw new Exception("Valor deve ser maior que zero");
+
+        Saldo += valor;
+    }
+    public void Sacar(decimal valor)
+    {
+        if (valor <= 0)
+            throw new Exception("Valor deve ser maior que zero");
+
+        if (Saldo < valor)
+        {
+            throw new Exception("Saldo insuficiente");
+
+    Saldo -= valor;
+        }
+    }
 }

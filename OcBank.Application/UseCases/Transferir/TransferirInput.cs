@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OcBank.Application.UseCases.Transferir
+{
+    public class TransferirInput
+    {
+        public Guid ContaOrigemId { get; set; }
+        public Guid ContaDestinoId { get; set; }
+        public decimal Valor { get; set; }
+    }
+}
