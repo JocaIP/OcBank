@@ -26,12 +26,13 @@ public class CriarUsuarioUseCase
 
         var usuarioExistente = await _usuarioRepositorio.ObterPorEmailAsync(input.Email);
 
+
         if (usuarioExistente != null)
         {
             throw new Exception("Email já está em uso");
         }
 
-        var usuario = new Usuario(input.Nome, input.Email);
+        var usuario = new Usuario(input.Nome, input.Email, input.Senha);
         var conta = new Conta(usuario.Id);
 
         // 🔥 salva os dois

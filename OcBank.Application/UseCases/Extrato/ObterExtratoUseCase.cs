@@ -16,9 +16,33 @@ namespace OcBank.Application.UseCases.Extrato
         {
             _repositorio = repositorio;
         }
-        public async Task<List<Transacao>> Executar(Guid contaId)
+        public async Task<List<ExtratoOutput>> Executar(Guid contaId)
         {
-            return await _repositorio.ObterPorContaIdAsync(contaId);
+            var transacoes = await _repositorio.ObterPorContaIdAsync(contaId);
+
+            return transacoes
+                .OrderByDescending(t => t.Data)
+                .Select(t => new ExtratoOutput
+                {
+                    Valor = t.Valor,
+                    Tipo = t.Tipo,
+                    Data = t.Data,
+                    Descricao = GerarDescricao(t.Tipo, t.Valor)
+                })
+                .ToList();
+        }
+        private string GerarDescricao(string tipo, decimal valor)
+        {
+
+            return tipo switch
+            {
+                "Deposito" => $"Depósito de {valor}",
+                "Saque" => $"Saque de {valor}",
+                "Transferencia_Envio" => $"Transferência enviada de {valor}",
+                "Transferencia_Recebida" => $"Transferência recebida de {valor}",
+                _ => "Movimentação"
+            };
         }
     }
 }
+

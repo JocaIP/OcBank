@@ -27,4 +27,9 @@ public class UsuarioRepositorio : IUsuarioRepositorio
         return await _context.Usuarios
             .FirstOrDefaultAsync(u => u.Email == email);
     }
+
+    public Usuario ObterPorEmail(string email)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -5,4 +5,5 @@ public interface IUsuarioRepositorio
     Task CriarAsync(Usuario usuario);
     Task<List<Usuario>> ObterTodosAsync();
     Task<Usuario?> ObterPorEmailAsync(string email);
+    Usuario ObterPorEmail(string email);
 }

@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OcBank.Application.UseCases.CriarUsuario;
 using OcBank.Application.UseCases.Extrato;
+using OcBank.Application.UseCases.Login;
 using OcBank.Application.UseCases.ObterUsuarios;
 using OcBank.Application.UseCases.Sacar;
 using OcBank.Application.UseCases.Saldo;
@@ -94,7 +96,7 @@ public class UsuariosController : ControllerBase
             return BadRequest(new { erro = ex.Message });
         }
     }
-
+    [Authorize]
     [HttpGet("extrato/{contaId}")]
     public async Task<IActionResult> Extrato(
     [FromServices] ObterExtratoUseCase useCase,
@@ -102,5 +104,21 @@ public class UsuariosController : ControllerBase
     {
         var extrato = await useCase.Executar(contaId);
         return Ok(extrato);
+    }
+
+    [HttpPost("login")]
+    public IActionResult Login(
+    [FromServices] LoginUseCase useCase,
+    [FromBody] LoginInput input)
+    {
+        try
+        {
+            var token = useCase.Executar(input);
+            return Ok(new { token });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { erro = ex.Message });
+        }
     }
 }

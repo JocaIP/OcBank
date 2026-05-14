@@ -30,7 +30,7 @@ public class Conta
         {
             throw new Exception("Saldo insuficiente");
 
-    Saldo -= valor;
+        Saldo -= valor;
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace OcBank.Application.UseCases.Transferir
 {
@@ -15,11 +16,13 @@ namespace OcBank.Application.UseCases.Transferir
         private readonly ITransacaoRepositorio _transacaoRepositorio;
 
         public TransferirUseCase(
-            IContaRepositorio contaRepositorio,
-            ITransacaoRepositorio transacaoRepositorio)
+        IContaRepositorio contaRepositorio,
+        ITransacaoRepositorio transacaoRepositorio
+        )
         {
             _contaRepositorio = contaRepositorio;
             _transacaoRepositorio = transacaoRepositorio;
+            
         }
         public async Task Executar(TransferirInput input)
         {
